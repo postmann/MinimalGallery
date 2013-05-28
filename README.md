@@ -20,3 +20,8 @@ Installation
 * access your gallery for the first time, this will create all image folders
 * upload the full-size images to the "big" folder
 * access your gallery again and enjoy :)
+
+Bugs/Missing Features
+---------------------
+
+* file formats other than PNG are not supported
