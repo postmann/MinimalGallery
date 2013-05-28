@@ -6,6 +6,7 @@
 
         <link href="<?php echo $root_dir?>style.css" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=<?php echo $google_font_name?>" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/png" href="favicon.png">
         
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     </head>
