@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Rewrite rule for watermark script
+RewriteRule   ^images/(.*)$             watermark.php?&img=$1   [NC,L]
+
+# Rewrite rule for displaying single colorized images
+RewriteRule   ^([0-9]*)/color/(.*)$    single.php?&sketch=$2&index=$1&color=true   [NC,L]
+
+# Rewrite rule for displaying single images
+RewriteRule   ^([0-9]*)/(.*)$    single.php?&sketch=$2&index=$1   [NC,L]
