@@ -36,7 +36,7 @@
                         $single_ref = "";
                         if ($nice_urls) {
                             $im_url = "images/".$im_small;
-                            $single_ref = $index."/".$file;
+                            $single_ref = $index."/".basename($file, ".png");
                         } else {
                             $im_url = "watermark.php?&img=".$im_small;
                             $single_ref = "single.php?&sketch=".$file."&index=".$index;

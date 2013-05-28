@@ -27,7 +27,7 @@
     }
     
     if ($nice_urls) {
-        $im_url = "images/".$folder.$sketch;
+        $im_url = "images/".$folder.$sketch.".png";
     } else {
         $im_url = "watermark.php?&img=".$folder.$sketch;
     }
