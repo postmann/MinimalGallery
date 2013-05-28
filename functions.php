@@ -71,8 +71,8 @@
         if (!file_exists('big')) {
             mkdir('big');
         }
-        if (!file_exists('big_color')) {
-            mkdir('big_color');
+        if (!file_exists('color_big')) {
+            mkdir('color_big');
         }
         if (!file_exists('small')) {
             mkdir('small');
