@@ -1,0 +1,38 @@
+/* general stuff */
+body {
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #000;
+}
+
+p {
+    margin-bottom: 10rem;
+}
+
+/* add some shadows to images */
+img {
+  -moz-box-shadow:    0px 0px 15px #000;
+  -webkit-box-shadow: 0px 0px 15px #000;
+  box-shadow:         0px 0px 15px #000;
+}
+
+/* move first image up to gallery title heading */
+h1 {
+    margin-bottom: -6rem;
+}
+
+/* restrict size of images on single site */
+img.big {
+    width: 60%;
+    max-width: 1000px;
+}
+
+/* suppress ugly colors of hover and visited links */
+a, a:hover, a:visited {
+    color: #000;
+}
+
+/* move link for colorized images up to image itself */
+.colorlink {
+    margin-top: -6rem;
+}
