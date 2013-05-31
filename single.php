@@ -29,8 +29,18 @@
     
     if ($nice_urls) {
         $im_url = "images/".$folder.$sketch.".png";
+        $link_normal = $root_dir.$index."/".$sketch;
+        $link_color = $root_dir.$index."/color/".$sketch;
+        $color_filename = "color_big/".$sketch.".png";
     } else {
-        $im_url = "watermark.php?&img=".$folder.$sketch;
+        $folder = "big/";
+        if ($color) {
+            $folder = "color_big/";
+        }
+        $im_url = "watermark.php?img=".$folder.$sketch;
+        $link_normal = $root_dir."/single.php?sketch=".$sketch."&index=".$index;
+        $link_color = $root_dir."/single.php?color=true&sketch=".$sketch."&index=".$index;
+        $color_filename = "color_big/".$sketch;
     }
     
     echo "
@@ -41,12 +51,12 @@
 
     if (isset($color)) {
         echo "
-        <p class=\"colorlink\"><a href=\"".$root_dir.$index."/".$sketch."\">Bleistift-Skizze</a></p>
+        <p class=\"colorlink\"><a href=\"".$link_normal."\">Bleistift-Skizze</a></p>
         ";
     } else {
-        if (file_exists("color_big/".$sketch)) {
+        if (file_exists($color_filename)) {
             echo "
-        <p class=\"colorlink\"><a href=\"".$root_dir.$index."/color/".$sketch."\">Coloriert</a></p>
+        <p class=\"colorlink\"><a href=\"".$link_color."\">Coloriert</a></p>
             ";
         }
     }
