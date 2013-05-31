@@ -44,7 +44,7 @@
         $y = imagesy($im) - $textHeight;
         
         // create watermark
-        ImageTTFText ($im, $size, 0, $x-$size, $y-$size/2, $textcolor, $fontfile, $text);
+        ImageTTFText ($im, $size, 0, $x-$size, $y+$size/2, $textcolor, $fontfile, $text);
         
         header('Content-type: image/png');
         header("Content-disposition: inline; filename=".str_replace(" ", "_", basename($im_path)));
