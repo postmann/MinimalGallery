@@ -18,6 +18,10 @@ Installation
 * Change configuration in [config.php](config.php)
 * Download "Julius Sans One" from Google Webfonts (or the one that you configured in config.php)
 * access your gallery for the first time, this will create all image folders
+
+Usage
+-----
+
 * upload the full-size images to the "big" folder
 * access your gallery again and enjoy :)
 
